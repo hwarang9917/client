@@ -1,5 +1,7 @@
 <!-- table -->
-<table style="border: 1px solid black;">
+<table style="border: 1px solid black;
+            border-collapse: collapse;
+             width: 200px;">
     <tr>
         <td style="border: 1px solid black;">lorem.</td>
         <td style="border: 1px solid black;">lorem.</td>
@@ -34,27 +36,31 @@
 </table>
 
 <hr>
-<!-- 제목 셀 th -->
-<table>
+<!-- 제목 셀 th : 굵은 글씨, 가운데 정렬 -->
+<table style="border: 1px solid black;
+                border-collapse: collapse; 
+                width: 250px;">
+    <!-- tr*3>td*2>lorem1 -->
     <tr>
-        <th>Lorem.</th>
-        <th>Nobis?</th>
+        <td>Lorem.</td>
+        <td>Vero?</td>
     </tr>
     <tr>
         <td>Lorem.</td>
-        <td>Eveniet?</td>
+        <td>Impedit!</td>
     </tr>
     <tr>
         <td>Lorem.</td>
-        <td>Illo!</td>
+        <td>Ad?</td>
     </tr>
 </table>
 
 <hr>
 <!-- 4행 3열 테이블 만들기, 첫번째 행은 제목셀들로 만들기 -->
+<!-- table>tr*1>th*3>lorem1^^tr*3>td*3>lorem1 -->
 <table style="border: 1px solid black;
-border-collapse: collapse; 
-width: 400px;">>
+            border-collapse: collapse; 
+            width: 400px;">
     <tr>
         <th style="border: 1px solid black;">Lorem.</th>
         <th style="border: 1px solid black;">Qui.</th>
@@ -105,9 +111,8 @@ width: 400px;">>
 <hr>
 <!-- 5행3열 테이블 만들기, 테두리, 첫째행 제목셀 -->
 <table style="border: solid purple 5px;
-        "border-collapse: collapse;">
+        border-collapse: collapse;">
     <thead>
-    <tbody>
         <tr>
             <th style="border: solid purple 2px;
             border-radius: 10px;">Lorem.</th>
@@ -116,13 +121,15 @@ width: 400px;">>
             <th style="border: solid gold 2px;
             border-radius: 1px ;">Dignissimos!</th>
         </tr>
+    </thead>
+    <tbody>
         <tr>
             <td style="border: solid rgb(17,39,102);
             border-radius: 100px;">Lorem.</td>
             <td style="border: solid rgb(17,39,102);
             border-radius: 100px;">Quasi?</td>
             <td style="border: solid rgb(17,39,102);
-            border-radius: 100pxn;">Aspernatur.</td>
+            border-radius: 100px;">Aspernatur.</td>
         </tr>
         <tr>
             <td style="border: solid rgb(17,39,102);
@@ -141,10 +148,12 @@ width: 400px;">>
             border-radius: 300px;">Repellat?</td>
         </tr>
         <tr>
-            <td style="border-radius: 1px;">Lorem.</td>
-            <td style="border-radius: 1px;">Sint!</td>
-            <td style="border-radius: 1px;">Fuga!</td>
+            <td style="border: solid rgb(17,39,102);
+            border-radius: 1px;">Lorem.</td>
+            <td style="border: solid rgb(17,39,102);
+            border-radius: 1px;">Sint!</td>
+            <td style="border: solid rgb(17,39,102);
+            border-radius: 1px;">Fuga!</td>
         </tr>
     </tbody>
-    </thead>
 </table>
