@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            color: blue;
+        }
+        h1+p {
+            background-color: gold;
+        }
+        h1~p {
+            border: 1px solid black;
+        }
+        div>p {
+            border: dotted 5px yellow;
+        }
+        div~p {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor.</p>
+    <h1>Lorem.</h1>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Tenetur, accusantium a!</p>
+    <p>Voluptas, sapiente voluptates?</p>
+    <p>Autem, tempore ex?</p>
+    <p>Nobis, odit eligendi.</p>
+
+    <div>
+        <!-- 아래 두 p 요소의 테두리를 dotted 5px yellow -->
+        <p>Lorem, ipsum dolor.</p>
+        <p>Fugit, maxime nisi!</p>
+    </div>
+
+    <!-- 아래 두 p 요소의 배경색을 green -->
+
+    <p>Lorem, ipsum dolor.</p>
+    <p>Voluptates, perspiciatis aut.</p>
+</body>
+</html>
