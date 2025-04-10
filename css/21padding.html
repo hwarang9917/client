@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1 {
+    width: 200px;
+    height: 100px;
+    border: 5px groove black;
+}
+h1:nth-child(odd) {
+    background-color: orange;
+}
+h1:nth-child(even) {
+    background-color: deepskyblue
+}
+#head1 {
+    /* content area-border 사이 간격 */
+    padding: 10px;
+}
+ /* #head2 padding 15px */
+#head2 {
+   
+    padding: 15px;
+}
+#head3 {
+    padding-top: 15px;
+}
+#head4 {
+    padding-bottom: 17px;
+}
+#head5 {
+    padding-left: 20px;
+}
+#head6 {
+    padding-right: 18px;
+}
+#head7 {
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 9px;
+    padding-right: 11px;
+}
+#head8 {
+    /* 4개 : 위 오른쪽 아래 왼쪽 순서 */
+    padding: 12px 14px 16px 18px;
+}
+#head9 {
+    /* 3개 : 위 좌우 아래 순서 */
+    padding: 3px 5px 7px;
+}
+#head10 {
+    /* 2개 : 상하 좌우 순서 */
+    padding: 2px 4px;
+}
+h3 {
+   border: 7px groove black;
+}
+h3:nth-child(odd) {
+    background-color: red;
+}
+h3:nth-child(even) {
+    background-color: blue;
+}
+#head12 {
+    padding: 10px;
+}
+#head13 {
+    padding-top: 11px;
+}
+#head14 {
+    padding-bottom: 13px;
+}
+#head15 {
+    padding-left: 15px;
+}
+#head16 {
+    padding-right: 17px;
+}
+#head17 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#head18 {
+    padding: 12px 20px;
+}
+    </style>
+</head>
+<body>
+    <!-- h1#head$*10>lorem1 -->
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Dolorum.</h1>
+    <h1 id="head3">Nulla?</h1>
+    <h1 id="head4">Rerum.</h1>
+    <h1 id="head5">Libero.</h1>
+    <h1 id="head6">Magnam?</h1>
+    <h1 id="head7">Incidunt?</h1>
+    <h1 id="head8">Quibusdam.</h1>
+    <h1 id="head9">Vitae!</h1>
+    <h1 id="head10">Fuga!</h1>
+
+    <hr>
+
+    <!-- h3#head$@12*10>lorem1 -->
+     <!-- h3 홀수배경 red -->
+     <!-- h3 짝수배경 blue -->
+     <!-- h3 테두리 7px -->
+
+     <!-- 4방향 패딩 10px -->
+    <h3 id="head12">Lorem.</h3>
+    <!-- 위패딩11px -->
+    <h3 id="head13">Ea?</h3>
+<!-- 아래 패딩 13px -->
+    <h3 id="head14">Ducimus.</h3>
+    <!-- 왼쪽 패딩 15px -->
+    <h3 id="head15">Maxime.</h3>
+    <!-- 오른쪽 패딩 17px -->
+    <h3 id="head16">Quaerat.</h3>
+<!-- 좌우 20px 상하 12px -->
+    <h3 id="head17">Tenetur.</h3>
+    <br>
+    <h3 id="head18">Dignissimos.</h3>
+    <h3 id="head19">Quod.</h3>
+    <h3 id="head20">Dolorem!</h3>
+    <h3 id="head21">Ipsam.</h3>
+</body>
+</html>

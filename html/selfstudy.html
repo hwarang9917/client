@@ -1,2 +1,40 @@
 <!DOCTYPE html>
-head^body>h1>Lorem2+p>Lorem2+h2>Lorem2+p+div>p+table>thead+tbody+h1+p
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>선택자 연습</title>
+  <style>
+    /* 여기에 스타일을 작성해보세요 */
+    .box > p {
+        border: 5px groove black;
+    }
+
+    h2 ~ p {
+        background-color: #f0f0f0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 형제 & 자식 선택자용 -->
+  <div class="box">
+    <p>직계 자식</p>
+    <section>
+      <p>자손 (자식의 자식)</p>
+    </section>
+  </div>
+
+  <h2>제목</h2>
+  <p>제목 바로 뒤 문단</p>
+  <p>제목 뒤에 있는 두 번째 문단</p>
+
+  <!-- 속성 선택자용 -->
+  <a href="https://google.com">Google</a><br>
+  <a href="http://naver.com">Naver</a><br>
+  <a href="https://github.com">GitHub</a><br>
+  <img src="dog.jpg" alt="강아지">
+  <img src="cat.png" alt="고양이">
+
+</body>
+</html>
