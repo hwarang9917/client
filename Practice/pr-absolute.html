@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>drop-down-practice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>
+    .dropdown-container {
+        position: relative;
+        display: block;
+    }
+    .dropdown-container:hover {
+       display: block;
+    }
+    .dropdown-content {
+        background-color: white;
+        display: none;
+        position: absolute;
+        border: 1px solid black;
+        padding: 5px;
+
+    }
+    .dropdown-content a {
+  display: block;
+  font-size: 18px;
+  padding:6px 20px;
+}
+    .dropdown-container:hover .dropdown-content {
+    display: block;
+}
+
+    .site-content {
+        position: relative;
+    }
+</style>
+
+<body>
+    <div class="button-container">
+        <h2>dropdown-practice</h2>
+        <div class="dropdown-container">
+            <button class="button">Hover over me!</button>
+            <div class="dropdown-content">
+                <a href="#" class="button1">link1
+                </a>
+                <a href="" class="button2">link2
+                </a>
+                <a href="" class="button3">link3
+                </a>
+            </div>
+        </div>
+        <!-- (.site-content>(h3>lorem2^h5>lorem2)) -->
+        <div class="site-content">
+            <h3>Lorem, ipsum.</h3>
+            <h5>Lorem, ipsum.</h5>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

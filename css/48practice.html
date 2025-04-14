@@ -9,6 +9,24 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .fixed-top-menu {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            padding: 0px 24px 0px 8px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .move-right {
+            position: relative;
+            left: 20px;
+        }
+
+        .left-padding {
+            padding-left: 30px;
+        }
+
         .nemo-button {
             padding: 17px;
         }
@@ -104,6 +122,7 @@
         .main-content-container {
             display: flex;
             height: 100vh;
+            margin-top: 114px;
         }
 
         .side-menu {
@@ -136,58 +155,59 @@
 </head>
 
 <body>
-    <div class="menu-container">
-        <div class="logo">
-            <span>
-                W
-            </span>
+    <div class="fixed-top-menu">
+        <div class="menu-container">
+            <div class="logo">
+                <span>
+                    W
+                </span>
+            </div>
+            <div class="nemo-button">
+                Tutorials
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Exercise
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Certificates
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Services
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="cart-button">
+                <i style="color: purple;" class="fa-solid fa-cart-shopping"></i>
+                <span>
+                    Get Certified
+                </span>
+            </div>
+            <div class="circle-button move-right">
+                <span>
+                    Sign up
+                </span>
+            </div>
+            <div class="circle-button left-padding">
+                <span>
+                    Log in
+                </span>
+            </div>
         </div>
-        <div class="nemo-button">
-            Tutorials
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Exercise
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Certificates
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Services
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="cart-button">
-            <i style="color: purple;" class="fa-solid fa-cart-shopping"></i>
-            <span>
-                Get Certified
-            </span>
-        </div>
-        <div class="circle-button">
-            <span>
-                Sign up
-            </span>
-        </div>
-        <div class="circle-button">
-            <span>
-                Log in
-            </span>
+        <!-- 두번째 상단바 -->
+        <!-- div.second.top-bar>.second-menu-item*8>lorem1 -->
+        <div class="second-top-bar">
+            <div class="second-menu-item">Lorem.</div>
+            <div class="second-menu-item">Hic!</div>
+            <div class="second-menu-item">Natus!</div>
+            <div class="second-menu-item">Dicta!</div>
+            <div class="second-menu-item">Quod.</div>
+            <div class="second-menu-item">Pariatur!</div>
+            <div class="second-menu-item">Sed!</div>
+            <div class="second-menu-item">Vitae.</div>
         </div>
     </div>
-    <!-- 두번째 상단바 -->
-    <!-- div.second.top-bar>.second-menu-item*8>lorem1 -->
-    <div class="second-top-bar">
-        <div class="second-menu-item">Lorem.</div>
-        <div class="second-menu-item">Hic!</div>
-        <div class="second-menu-item">Natus!</div>
-        <div class="second-menu-item">Dicta!</div>
-        <div class="second-menu-item">Quod.</div>
-        <div class="second-menu-item">Pariatur!</div>
-        <div class="second-menu-item">Sed!</div>
-        <div class="second-menu-item">Vitae.</div>
-    </div>
-
     <!-- .main-content-container>.side-menu+.main-content+.ad-container -->
     <div class="main-content-container">
         <div class="side-menu">
