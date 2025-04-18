@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적처리프로그램</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>성적처리프로그램v2</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        //  array
+        // forEach
+        // for..of
+        // for..in
+        // 입력 - 이름,국어,영어,수학
+        let name = prompt('이름을 입력하세요');
+        let kor = Number(prompt('국어를 입력하세요'));
+        let eng = Number(prompt('영어를 입력하세요'));
+        let math = Number(prompt('수학을 입력하세요'));
+        // 처리
+
+        let tot = (kor + eng + math);
+        let avg = tot / 3;
+        let grd = "가";
+
+        // 학점 계산
+        if (tot >= 90) grd = "수";
+        else if (tot >= 80) grd = "우";
+        else if (tot >= 70) grd = "미";
+        else if (tot >= 60) grd = "양";
+
+        document.write(`이름: ${name} <br>`);
+        document.write(`국어: ${kor} <br>`);
+        document.write(`영어: ${eng} <br>`);
+        document.write(`수학: ${math} <br>`);
+        document.write(`총점: ${tot} <br>`);
+        document.write(`평균: ${avg.toFixed(1)} <br>`);
+        document.write(`학점: ${grd} <br>`);
+    </script>
+</body>
+
+</html>

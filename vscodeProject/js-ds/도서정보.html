@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 정보</title>
+</head>
+
+<body>
+    <h1>도서3종 중 가장 비싼 책</h1>
+    <script>
+        // 입력
+        // 도서 정보 3권 이름, 가격
+        let books = [];
+
+
+        for (let i = 0; i < 3; ++i) {
+            let book = new Object();
+            book.name = prompt(' 제목을 입력하세요');
+            book.author = prompt('저자를 입력하세요');
+            book.price = prompt('가격을 입력하세요');
+            books.push(book);
+        }
+
+         // 직렬화 후 localStorage 저장
+         localStorage.setItem("books", JSON.stringify(books));
+         
+         // 역직렬화 : JSON.parse(객체)
+         books = JSON.parse(localStorage.getItem("books"));
+
+        // 처리 가장 비싼 책 찾기
+        let maxBook = books[0];
+        for (let i = 1; i < books.length; i++) {
+            if (books[i].price > maxBook.price) {
+                maxBook = books[i];
+            }
+        }
+
+        // 출력
+        let result = '<p>전체 도서 정보</p>';
+        for (let book of books) {
+            result += `제목 : ${book.name}, 저자 : ${book.author} 가격 : ${book.price} <br>`;}
+        
+
+            result += `<p>가장 비싼 책`;
+            result += `가장 비싼 책 제목 ${maxBook.name}, 가장 비싼 책 저자 : ${maxBook.author}, 
+                가장 비싼 책 가격 : ${maxBook.price}</p>`;
+        
+// 선악의 저편, 프리드리히 니체, 20,700원
+// 도덕의 계보, 프리드리히 니체, 16,200원
+// 차라투스트라는 이렇게 말했다, 프리드리히 니체, 11,700원
+
+        document.write(result);
+    </script>
+</body>
+
+</html>
