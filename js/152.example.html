@@ -29,30 +29,28 @@
     <script>
         // +
         let btn1 = document.querySelector("button").addEventListener("click", function () {
-            document.querySelector("#input1").value;
-
             let li = document.createElement("li");
-            li.textContent = v;
-
+            li.textContent = document.querySelector("#input1").value;
+            
+            document.querySelector("#list1").append(li);
         });
 
-        완료
-        let btn2 = document.createElement("button");
-        btn2.textContent = "완료"; 
+        // // 완료
+        // let btn2 = document.createElement("button");
+        // btn2.textContent = "완료"; 
 
-        document.querySelector("#btn2").addEventListener("click", function () {
-            let li = document.querySelectorAll("#list1 li")
-            li.classList.toggle("done");
-        });
+        // document.querySelector("#btn2").addEventListener("click", function () {
+        //     let li = document.querySelectorAll("#list1 li")
+        //     li.classList.toggle("done");
+        // });
 
-        // 삭제
-        let btn3 = document.createElement("button");
-        btn3.textContent = "삭제";
-        btn3.addEventListener("click", function () {
-            li.remove();
-        });
+        // // 삭제
+        // let btn3 = document.createElement("button");
+        // btn3.textContent = "삭제";
+        // btn3.addEventListener("click", function () {
+        //     li.remove();
+        // });
 
-        document.querySelector("#list1").append(li);
     </script>
 </body>
 
